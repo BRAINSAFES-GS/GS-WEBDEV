@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Sobre Enchentes</title>
+    <link rel="stylesheet" href="./src/css/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Quiz Enchentes</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <div class="theme-switcher">
+                    <img src="images/icons/theme1.svg" alt="Tema Azul" data-theme="blue">
+                    <img src="images/icons/theme2.svg" alt="Tema Verde" data-theme="green">
+                    <img src="images/icons/theme3.svg" alt="Tema Laranja" data-theme="orange">
+                </div>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Teste Seus Conhecimentos Gerais</h1>
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="images/slide1.jpg" alt="Conhecimento">
+                </div>
+                <div class="slide fade">
+                    <img src="images/slide2.jpg" alt="Aprendizado">
+                </div>
+                <div class="slide fade">
+                    <img src="images/slide3.jpg" alt="Educação">
+                </div>
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
+            </div>
+        </section>
+
+        <section id="quiz" class="quiz-section">
+            <h2>Quiz Enchentes</h2>
+            <div class="quiz-container">
+                <div id="quiz"></div>
+                <button id="submit">Enviar Respostas</button>
+                <div id="results"></div>
+            </div>
+        </section>
+
+        <section id="contato" class="contact-section">
+            <h2>Entre em Contato</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome*</label>
+                    <input type="text" id="name" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - BrainSafe - Flood Protection</p>
+    </footer>
+
+    <script src="./src/js/validacao.js"></script>
+    <script src="./src/js/slideshow.js"></script>
+    <script src="./src/js/mudar-tema.js"></script>
+    <script src="./src/js/quiz.js"></script>
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
